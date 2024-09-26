@@ -51,7 +51,7 @@ int max3(int x, int y, int z) {
   return z;
   */
   return (x * ((x >= y) && (x >= z))) + (y * ((y >= x) && (y >= z))) +
-         (z * ((z >= y) && (z >= x)));
+         (z * ((z >= y) && (z >= x))) - 2 * x * (x ==y && y == z);
 }
 
 // Zadanie number 3
