@@ -142,9 +142,10 @@ int Lab1() {
     pos19 = input(pos19, "Введите позицию на которую вставить это число: ");
     ptr19 = add(ptr19, x19, pos19, count19);
     std::cout << "Новый массив: ";
-    for (int i = 0; i < count19; i++)
-      std::cout << *(ptr19 + i) << ' ' << std::endl;
+    for (int i = 0; i < count19 + 1; i++)
+      std::cout << *(ptr19 + i) << ' ';
     delete ptr19;
+    std::cout<<std::endl;
     break;
   case 20:
     int *ptr20, *NewArr;
