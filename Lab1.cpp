@@ -29,9 +29,7 @@ double safeDiv(int x, int y) {
 bool is35(int x) {
   if ((x % 3) == 0 && (x % 5) == 0)
     return false;
-  else if ((x % 3) == 0)
-    return true;
-  else if ((x % 5) == 0)
+  else if (((x % 3) == 0) || ((x % 5) == 0))
     return true;
   return false;
 }
