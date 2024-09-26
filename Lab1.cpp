@@ -140,7 +140,7 @@ int *add(int arr[], int x, int pos, int count) {
       newArr[i] = x;
       flag += 1;
     }
-    newArr[i + flag] = arr[i + flag];
+    newArr[i + flag] = arr[i];
   }
   return newArr;
 }
