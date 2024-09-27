@@ -50,7 +50,7 @@ int max3(int x, int y, int z) {
     return y;
   return z;
   */
-  return (x * ((x > y) && (x > z))) + (y * ((y >= x) && (y > z))) +
+  return (x * ((x >= y) && (x >= z))) + (y * ((y >= x) && (y >= z))) +
          (z * ((z >= y) && (z >= x))) - 2 * x * (x ==y && y == z);
 }
 
